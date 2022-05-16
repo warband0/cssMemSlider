@@ -2,18 +2,20 @@
 	margin: 0;
 }
 
-header{
-	
-}
-.hat{
-   
-}
+
 .hat > img{
 	width: 100%;
 }
 body {
 	background-color: #914400;
-	height: 2000px;
+}
+h1{
+	display: flex;
+	font-family: 'Roboto';
+	font-weight: bold;
+	margin: 30px auto;
+	justify-content: center;
+	color: #ffc624;
 }
 .wrapper {
 	margin: 0 auto;
@@ -28,13 +30,12 @@ body {
 	
 }
 main{
-	margin-top: 30px;
+	margin: 30px auto;
 }
 .slider {
 	width: 610px;
 	height: 610px;
 	overflow: hidden;
-	z-index: 2;
 }
 .wrapper > input {
 	display: none;
@@ -103,18 +104,6 @@ label > div{
 	
 }
 
-
-#slide1:checked ~ .slider > .slide1,
-#slide2:checked ~ .slider > .slide2,
-#slide3:checked ~ .slider > .slide3,
-#slide4:checked ~ .slider > .slide4,
-#slide5:checked ~ .slider > .slide5,
-#slide6:checked ~ .slider > .slide6,
-#slide7:checked ~ .slider > .slide7,
-#slide8:checked ~ .slider > .slide8,
-#slide9:checked ~ .slider > .slide9,
-#slide10:checked ~ .slider > .slide10 {
-}
 
 #slide1:checked ~ .slider > .slide1{
 	transform: translateY(0);
