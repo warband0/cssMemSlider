@@ -2,7 +2,13 @@
 	margin: 0;
 }
 
-
+header{
+	width: 100%;
+	background: url('./assets/header.jpg');
+	height: 20vh;
+	background-position: center;
+	background-size: cover;
+}
 .hat > img{
 	width: 100%;
 }
@@ -76,7 +82,6 @@ label > div{
 
 .wrapper label {
 	cursor: pointer;
-	display: inline-block;
 	padding: 10px 5px;
 	
 }
@@ -191,4 +196,126 @@ label > div{
 	font-size: 20px;
 	white-space: nowrap;
 	transition: transform ease-in-out 1s;
+}
+
+footer{
+	padding: 20px 0;
+	display: flex;
+	justify-content: space-evenly;
+	background-color: #5a2c04;
+}
+
+a:active, a {
+	font-family: 'Roboto';
+	text-decoration: none;
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	text-decoration: none;
+	color: black;
+	transition: 0.5s;
+}
+a:hover{
+	color: gold;
+}
+a:hover > img{
+	transform: scale(1.2);
+	transition: 0.5s;
+}
+.git {
+	margin-top: 10px;
+}
+.rss-logo > a > img{
+	width: 260px;
+	height: 100px;
+	transition: 0.3s;
+}
+
+.git > a > img{
+	width: 50px;
+	height: 50px;
+}
+.vk> a > img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+@media(max-width: 767px){
+	.wrapper{
+		width: 370px;
+		height: 465px;
+		padding-top: 40px;
+    	padding-left: 27px;
+		background-image: url('./assets/terminal-mob.png');
+	}
+	.control-text{
+		flex-direction: column-reverse;
+	}
+	.slider{
+		width: 343px;
+		height: 342px;
+	}
+	.wrapper .controls {
+		margin-top: 21px;
+		margin-left: 44px;
+	}
+	label > div {
+		height: 16px;
+	}
+	.text-block{
+		margin-top: 0;
+	}
+	h1 {
+		margin: 30px 20px;
+		text-align: center;
+	}
+	footer{
+		justify-content: center;
+		gap: 20px;
+		align-items: center;
+		flex-direction: column;
+	}
+}
+
+@media(max-width: 409px){
+	.wrapper{
+		width: 280px;
+		height: 356px;
+		padding-top: 18px;
+		padding-left: 16px;
+	}
+	.control-text{
+		flex-direction: column-reverse;
+	}
+	.slider{
+		width: 265px;
+    	height: 265px;
+	}
+	.wrapper .controls {
+		margin-top: 16px;
+    	margin-left: 28px;
+	}
+	label > div {
+		height: 8px;
+		width: 4px;
+		
+	}
+	.wrapper label{
+		padding: 7px 5px;
+	}
+	.text-block{
+		height: 22px;
+		width: 98px;
+    	margin-left: 56px;
+	}
+	.text{
+		line-height: 22px;
+		font-size: 16px;
+	}
+	h1 {
+		margin: 30px 20px;
+		text-align: center;
+	}
 }
